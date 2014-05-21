@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* CSS Document */
+dialog {
+	border-radius: 6px;
+	border: 1px solid #333;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	padding: 1em;
+}
+
+dialog::backdrop,
+dialog + .backdrop {
+	background-color: rgba(0,225,0,0.5);
+}
+
+.btn-open {
+	}
+
+.btn-close {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	border: 2px solid #fff;
+	backgroung-color: #000;
+	color: #fff;
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+	font-weight: bold;
+	line-height: 0.6;
+	font-size: 1rem;
+	cursor: pointer;
+	padding: 0;
+	position: absolute;
+	top: -16px;
+	right: -16px;
+}

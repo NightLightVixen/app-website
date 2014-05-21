@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*-----------general-----------*/
+
+.block-1 {
+	color: #fff;
+	background-color: #fff;
+	height: 300px;
+}
+
+header {
+	background-color: #fff;
+	height: 50px;
+}
+
+.logo-temp {
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	
+}
+
+hr {
+}
+
+.unit {
+	display:block;
+	width: 150px;
+	padding-top: 10px;
+}
+
+#description {
+	padding-left: 15px;
+	width: auto;
+	}
+
+h1 {
+	margin: 0;
+}
+
+strong {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	color: #000;
+}
+
+
+p {
+	width: 300px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+	line-height: 14px;
+	margin: 0;
+}
+
+
+
+img {
+	margin: 10px;
+	max-width: 200px;
+}
+
+.temp-button {
+	margin-top: 10px;
+	margin-left: 0;
+
+}
+
+.next {
+	background-color: #C30;
+	color: #fff;
+}
+
+.previous {
+	
+	background-color: #C30;
+	color: #fff;
+}
+
+/*-----------carousel-----------*/
+
+.carousel {
+	position: relative;
+	padding-bottom: 0;
+	height: 500px;
+}
+
+.items {
+	padding-top: 20px;
+}
+
+.carousel img {
+	position: absolute;
+	padding-left: 115px;
+	padding-top: 40px;
+
+}
+
+.carousel-buttons {
+	padding-left: 155px;
+	position: absolute;
+	z-index: 1000;
+	
+}
+
+
+.carousel [data-state="current"] {
+	z-index: 100;
+}
+
+.carousel [data-state="incoming"] {
+	z-index: 101;
+}
+
+
+/*-----------animation-----------*/
+
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+section {
+	padding: 5em 0;
+}
+
+.orbit-section {
+	background-color: #9f221b;
+}
+
+.cross-wrapper {
+	position: relative;
+}
+
+.cross {
+	width: 100px;
+}
+
+.twodot {
+	margin-left: -20px;
+	left: 50%;
+	top: -40px;
+	width: 40px;
+	/*Dont forget the rest of the vendor prefixes*/
+	/*-webkit-transform: rotate(-120deg);*/
+	-webkit-transform-origin: 50% 90px;
+	-webkit-animation: rocket-rotate 6s linear infinite;
+	/* --Long version--
+	-webkit-animation-name: rocket-rotate;
+	-webkit-animation-duration: 6s;
+	-webkit-timing-function: linear;
+	-webkit-iteration-count: infinite;
+	*/
+	position: absolute;
+}
+
+@-webkit-keyframes rocket-rotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+.firstext-section {
+  background-color: #fff;
+}
+
+.firstext {
+  width: 240px;
+  opacity: 0;
+
+}
+
+.js-firstext-animate {
+    -webkit-animation: firstext-fade 1s linear 1 forwards;
+  /*
+  How to apply styles before and after animating
+  'forwards'-retains the last computed animation values
+  animation-fill-mode: forwards; */
+}
+
+@-webkit-keyframes firstext-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+  opacity: 1;
+  }
+}
+
+@media screen and (min-width: 430px) {
+
+}
+	
+

@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	font: normal 100%/1.5 Georgia, serif;
+	background-color: #eae8e1;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+section {
+	padding: 10em 0;
+}
+
+.orbit-section {
+	background-color: #9f221b;
+}
+
+.planet-wrapper {
+	position: relative;
+}
+
+.planet {
+	width: 100px;
+}
+
+.rocket {
+	margin-left: -20px;
+	left: 50%;
+	top: -40px;
+	width: 40px;
+	/*Dont forget the rest of the vendor prefixes*/
+	/*-webkit-transform: rotate(-120deg);*/
+	-webkit-transform-origin: 50% 90px;
+	-webkit-animation: rocket-rotate 6s linear infinite;
+	/* --Long version--
+	-webkit-animation-name: rocket-rotate;
+	-webkit-animation-duration: 6s;
+	-webkit-timing-function: linear;
+	-webkit-iteration-count: infinite;
+	*/
+	position: absolute;
+}
+
+@-webkit-keyframes rocket-rotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+.sun {
+	width: 300px;
+}
+
+.dipper-section {
+	background-color: #c7c0ae;
+}
+
+.dipper {
+	width: 240px;
+	opacity: 0;
+	
+}
+
+.js-dipper-animate {
+	-webkit-animation: dipper-fade 1s linear 1 forwards;
+	/*
+	How to apply styles before and after animating.
+	'forwards' - retain the last computed animation values
+	
+	animation-fill-mode: forwards;
+	*/
+}
+
+@-webkit-keyframes dipper-fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.ships-section {
+	background-color: #f6a500;
+}
+
+.ships {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.ships li {
+	display: inline-block;
+	margin: 0 2rem;
+}
+
+.ships img {
+	width: 140px;
+	opacity: 0;
+	-webkit-transform: translateY(140px);
+}
+
+.js-ships-animate {
+	-webkit-animation: ship-fly 1s ease-out 1 forwards;
+}
+
+@-webkit-keyframes ship-fly {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(140px);
+		}
+	40% {
+		opacity: 1;
+		}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+		}
+}
+
+.js-ship-delay-1 {
+	-webkit-animation-delay: 100ms;
+}
+
+.js-ship-delay-2 {
+	-webkit-animation-delay: 200ms;
+}
+
+.js-ship-delay-3 {
+	-webkit-animation-delay: 250ms;
+}

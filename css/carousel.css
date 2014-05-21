@@ -1,0 +1,32 @@
+.carousel {
+	position: relative;
+	padding-bottom: 100%;
+}
+
+.items {
+	padding-top: 20px;
+}
+
+.carousel img {
+	position: absolute;
+	left: 10%;
+	height: 100%;
+}
+
+.carousel-buttons {
+	position: absolute;
+	z-index: 1000;
+	
+}
+
+
+
+.carousel [data-state="current"] {
+	z-index: 100;
+}
+
+.carousel [data-state="incoming"] {
+	z-index: 101;
+}
+
+
